@@ -6,8 +6,8 @@ with open('requirements.txt', "r") as f:
 with open('test_requirements.txt', "r") as f:
     test_requirements = f.read().splitlines()
 
-with open("README.md", "r") as fh:
-    long_description = fh.read(encoding="utf-8")
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
 setuptools.setup(
     name='pyfy',
